@@ -47,7 +47,7 @@ if __name__ == "__main__":
     addresses_file = "eth.txt"
 
     try:
-        num_keys = int(input("How many Ethereum addresses to generate? "))
+        num_keys = 7000000 #int(input("How many Ethereum addresses to generate? "))
         batch_size = 200  # Reduce to avoid memory issues on PythonAnywhere free tier
         generate_and_save_all(num_keys, batch_size, keys_file, addresses_file)
     except ValueError:
