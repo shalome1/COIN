@@ -1,4 +1,4 @@
-name: Example Workflow
+name: Main
 
 on:
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
         run: python check.py
 
       - name: Upload output files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: final-files
           path: found/
